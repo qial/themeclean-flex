@@ -14,7 +14,7 @@ module.exports = {
             'btn-warning': model.buttoncolor === 'warning',
             'btn-light': model.buttoncolor === 'light',
             'btn-dark': model.buttoncolor === 'dark',
-            'invisible': model.previous === 'unknown',
+            'disabled': model.previous === 'unknown',
         }`
 
         let a2Classes = `{
@@ -27,9 +27,9 @@ module.exports = {
             'btn-warning': model.buttoncolor === 'warning',
             'btn-light': model.buttoncolor === 'light',
             'btn-dark': model.buttoncolor === 'dark',
-            'invisible': model.next === 'unknown',
+            'disabled': model.next === 'unknown',
         }`
-
+        
         let a1 =$.find('a').eq(0)
         let a2 =$.find('a').eq(1)
 
